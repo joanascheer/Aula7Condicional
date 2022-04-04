@@ -2,16 +2,22 @@ import java.util.Scanner;
 
 public class Exercicio4Condicional {
     public static void main(String[] args) {
-        Scanner lealtura = new Scanner(System.in);
-        Scanner lebase = new Scanner(System.in);
 
+        // Abrindo um leitor para captura de dados que o usuario vai digitar
+        Scanner leitor = new Scanner(System.in);
+
+        /* Coletando os tamanhos da base e altura do retângulo chamando o leitor
+        criado acima no Scanner para guardar o que o usuario digitar
+        nas variáveis base e altura */
         System.out.println("Qual o tamanho da base do seu retângulo? ");
-        double base = lebase.nextDouble();
+        double base = leitor.nextDouble();
         System.out.println("Qual a altura do seu retângulo? ");
-        double altura = lealtura.nextDouble();
+        double altura = leitor.nextDouble();
 
+        // Calculando a área
         double area = (base * altura);
 
+        // Entregando o resultado
         System.out.printf("A área do seu retângulo é de %.2f", area);
     }
     
